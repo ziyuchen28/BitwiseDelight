@@ -71,5 +71,21 @@ int safe_mul(int a, int b)
     return r;
 }
 
+bool has_alternating_bits(int n) {
+  int result = n ^ (n >> 1);
+  return (result & (result + 1)) == 0;
+}
+
+int get_msb(int n) {
+  n |= n >> 1;
+  n |= n >> 2;
+  n |= n >> 4;
+  n |= n >> 8;
+  n |= n >> 16;
+  n = n + 1;
+  return n >> 1;
+}
+
+
 
 

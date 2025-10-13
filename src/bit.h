@@ -12,5 +12,7 @@ bool is_power_of_two(int n);
 int get_lowest_set_bit(int n);
 int safe_add(int a, int b);
 int safe_mul(int a, int b);
+bool has_alternating_bits(int);
+int get_msb(int);
 
 #endif // BIT_MANIP_LIB_H
