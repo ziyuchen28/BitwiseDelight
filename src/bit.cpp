@@ -86,6 +86,9 @@ int get_msb(int n) {
   return n >> 1;
 }
 
+bool has_opposite_signs(int x, int y) {
+    return (x ^ y) < 0;
+}
 
 
 
